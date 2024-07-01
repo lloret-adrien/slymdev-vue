@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex justify-between items-center get-started">
+    <div class="flex flex-wrap gap-14 justify-between items-center get-started">
       <p class="gradient-text flex items-end text-2xl">
         <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_1_176)">
@@ -60,13 +60,8 @@ import BlocksEarned from '@/components/BlocksEarned.vue'
 </script>
 
 <style scoped>
-.get-started {
-  width: 500px;
-}
-
 .progress-container {
   margin-top: 10px;
-  width: 500px; /* Largeur de la barre de progression */
   background: linear-gradient(-318.22deg, #FFFFFF -4.95%, #FAFAFF 99.74%);
   border-radius: 40px; /* Rayon des coins */
   padding: 4px 10px; /* Espacement intérieur */

@@ -32,7 +32,7 @@ const cards = [
 
 <style scoped lang="scss">
 section {
-  padding: 24px 0px;
+  // padding: 24px 0px;
   padding-top: 0;
   border-radius: 8px 20px 20px 8px;
   box-shadow: 0px 0px 16px 0px #00000008;
