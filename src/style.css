@@ -1,0 +1,41 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*, body {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background-image: url('/background.png');
+  /* FONT */
+  font-family: "Manrope", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+:root {
+  --grey: #444444;
+}
+
+.gradient-text {
+  font-weight: bold;
+  background: linear-gradient(91.74deg, #40BEBE -20.8%, #2361E6 101.14%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* Sélecteur général pour tous les navigateurs */
+::-webkit-scrollbar {
+  width: 5px; /* Largeur de la scrollbar */
+}
+
+/* Sélecteur pour Chrome, Edge et Safari */
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(91.74deg, #40BEBE -20.8%, #2361E6 101.14%);
+  border-radius: 10px; /* Rayon de la thumb */
+}
