@@ -1,7 +1,8 @@
 <template>
   <Header />
   <div class="layout flex gap-2 pl-3 pr-8 pb-5">
-    <DMSetting />
+    <DMSetting class="fixed z-50 lg:static"/>
+    <div v-if="navStore.opened" class="absolute z-40 bg-black opacity-60 block lg:hidden left-0 top-0 w-full h-full"></div>
     <TourGuide />
   </div>
 </template>
