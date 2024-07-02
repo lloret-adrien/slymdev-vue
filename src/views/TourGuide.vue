@@ -18,14 +18,15 @@ const cards = [
     xp: 500,
   },
   {
-    title: 'Create more inbox',
+    title: 'Manage your messaging rules',
+    link: 'https://github.com/lloret-adrien',
     description: 'Create more inbox, welcome your new contact by a message',
-    xp: 500,
+    xp: 100,
   },
   {
     title: 'Create more inbox',
     description: 'Create more inbox, welcome your new contact by a message',
-    xp: 500,
+    xp: 200,
   },
 ]
 </script>

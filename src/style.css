@@ -39,3 +39,21 @@ body {
   background: linear-gradient(91.74deg, #40BEBE -20.8%, #2361E6 101.14%);
   border-radius: 10px; /* Rayon de la thumb */
 }
+
+.btn-animated {
+  transition: transform 200ms cubic-bezier(0.01, 1.24, 1, 1);
+  animation: bump 200ms ease;
+}
+
+.btn-animated:active {
+  transform: scale(.9);
+}
+
+@keyframes bump {
+  from {
+    transform: scale(1.2);
+  }
+  to {
+    transform: scale(1);
+  }
+}
