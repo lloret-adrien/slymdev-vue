@@ -1,6 +1,6 @@
 <template>
   <div>
-    <div class="flex flex-wrap gap-14 justify-between items-center get-started">
+    <div class="flex flex-wrap gap-16 justify-between items-center get-started">
       <p class="gradient-text flex items-end text-2xl">
         <svg width="31" height="30" viewBox="0 0 31 30" fill="none" xmlns="http://www.w3.org/2000/svg">
           <g filter="url(#filter0_d_1_176)">
@@ -28,13 +28,17 @@
           </linearGradient>
           </defs>
         </svg>
-        Get Started
+        <AnimatedText>
+          Get Started
+        </AnimatedText>
       </p>
       <div class="flex items-center gap-4 text-sm text-bold">
         <BlocksEarned />
         <div class="flex flex-col">
           <p class="gradient-text relative w-max">
-            You earned 20 500
+            <AnimatedText>
+              You earned 20 500
+            </AnimatedText>
             <svg class="absolute -right-3 -top-1" width="12" height="11" viewBox="0 0 14 13" fill="none" xmlns="http://www.w3.org/2000/svg">
               <path d="M11.6592 3.27586L9.51397 4.98276M13 7.8908L10.4525 7.25862M8.17318 9.5977L9.51397 12M5.42458 9.5977L4.28492 12M3.81564 7.25862L1 7.8908M4.55307 4.98276L2.34078 3.27586M6.96648 3.71839V1" stroke="url(#paint0_linear_1_278)" stroke-linecap="round" stroke-linejoin="round"/>
               <defs>
@@ -57,6 +61,7 @@
 
 <script setup>
 import BlocksEarned from '@/components/BlocksEarned.vue'
+import AnimatedText from '@/components/AnimatedText.vue'
 </script>
 
 <style scoped>

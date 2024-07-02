@@ -2,7 +2,7 @@
   <section class="bg-blue-50 w-full h-full flex flex-col items-center overflow-scroll">
     <GetStarted class="fixed bg-blue-50 pt-4 z-10" />
     <div class="flex flex-col gap-6 mt-32">
-      <GuideCard v-for="(card, index) in cards" :key="index" :card="card" />
+      <GuideCard v-for="(card, index) in cards" :key="index" :card="{ ...card, index }" />
     </div>
   </section>
 </template>

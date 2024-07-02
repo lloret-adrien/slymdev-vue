@@ -26,13 +26,18 @@
         </linearGradient>
       </defs>
     </svg>
-    <p class="gradient-text">DM Tour Guide</p>
+    <p class="gradient-text">
+      <AnimatedText>
+        DM Tour Guide
+      </AnimatedText>
+    </p>
     <CircularChart :somme="4" class="ml-auto" />
   </button>
 </template>
 
 <script setup>
 import CircularChart from '@/components/CircularChart.vue'
+import AnimatedText from '@/components/AnimatedText.vue'
 </script>
 
 <style scoped lang="scss">

@@ -27,6 +27,7 @@ body {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
+  position: relative;
 }
 
 /* Sélecteur général pour tous les navigateurs */
@@ -55,5 +56,39 @@ body {
   }
   to {
     transform: scale(1);
+  }
+}
+
+/* Click animation */
+.ripple {
+  position: relative;
+  overflow: hidden;
+}
+
+.ink {
+  display: block;
+  position: absolute;
+  background: rgba(59, 124, 228, 0.25);
+  border-radius: 100%;
+  transform: scale(0);
+  pointer-events: none;
+}
+
+.ink-animate {
+  -webkit-animation: ripple 0.5s linear;
+          animation: ripple 0.5s linear;
+}
+
+@-webkit-keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
+  }
+}
+
+@keyframes ripple {
+  100% {
+    opacity: 0;
+    transform: scale(1.5);
   }
 }
